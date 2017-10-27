@@ -3,7 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 
 // MODELS. UnA POR CADA COLECCIÓN
-const user = require('./router/user.router.js')();
+const user = require('./router/pais.router.js')();
 
 let app = express();
 
@@ -13,6 +13,6 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // ROUTERS
 
-app.use("/v1/user", user);
+app.use("/m1/pais", user);
 
 module.exports = app;
